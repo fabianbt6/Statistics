@@ -1,6 +1,6 @@
 ---
-title: "Tema 1: Introducción"
-subtitle: "Curso: Estadística"
+title: "Análisis estadístico introductorio"
+subtitle: "Estadística"
 author: 
   - Fabián Brenes Trejos
 format: 

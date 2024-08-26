@@ -3,9 +3,12 @@ project:
   output-dir: docs      
   
 website: 
-  navbar: 
+
+  navbar:
    left:
       - href: index.qmd
+        text: "Análisis Estadístico"
+
       
 format:
   html:
