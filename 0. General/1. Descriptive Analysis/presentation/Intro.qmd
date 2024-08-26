@@ -1,0 +1,20 @@
+---
+title: "Tema 1: Introducción"
+subtitle: "Curso: Estadística"
+author: 
+  - Fabián Brenes Trejos
+format: 
+  revealjs:
+    slide-number: true
+    theme: [../../template.scss]
+editor: visual
+fontsize: 26px
+---
+
+```{r, include=FALSE}
+library(ggplot2)
+```
+
+##  {.medium-font}
+
+PRUEBA

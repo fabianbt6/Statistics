@@ -1,0 +1,75 @@
+/*-- scss:defaults --*/
+
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
+/* Fonts */
+$font-family-sans-serif: "Open Sans", sans-serif !default;
+
+/* Colors */
+$body-bg: #fff !default; /* White background */
+$body-color: #494949 !default; /* Dark gray text */
+$link-color: #5fc9f3 !default; /* Accent color for links */
+$selection-bg: #5fc9f3 !default; /* Accent color for selections */
+$input-panel-bg: rgba(233, 236, 239, 0.2) !default; /* Input panel background */
+$code-block-border-color: rgba(233, 236, 239, 0.5) !default; /* Code block border */
+
+/* Header styles for the first slide */
+.reveal .slides > section:first-child {
+  background: #fff; /* White background for the first slide (matches others) */
+  color: #494949; /* Dark gray text */
+  text-align: center;
+  padding: 100px 0;
+  text-align: justify; /* Justify text for the first slide */
+  
+    h1 {
+    font-size: 2em; /* Adjust the font size for the title */
+    margin-bottom: 0.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+/* Apply a subtle underline with UCR's blue color to headings */
+.reveal .slides h1, .reveal .slides h2 {
+  border-bottom: 2px solid #004972; /* UCR's blue color underline */
+}
+
+/* Footer styling for all slides */
+.reveal .slides::after {
+  content: "USES, Escuela de Estadística, Universidad de Costa Rica"; /* Add UCR footer */
+  position: absolute;
+  bottom: -10px; /* Adjust the distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(73, 73, 73, 0.5); /* Use a transparent dark gray color */
+  font-size: 20px; /* Adjust the font size */
+}
+
+/* Font size classes */
+.small-font {
+  font-size: 20px; 
+}
+
+.smallmed-font {
+  font-size: 24px; 
+}
+
+.med30-font {
+  font-size: 30px; 
+}
+
+.medium-font {
+  font-size: 34px; 
+}
+
+.large-font {
+  font-size: 44px; 
+}
+
+.justify {
+  text-align: justify !important
+}
