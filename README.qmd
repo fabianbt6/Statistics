@@ -1,6 +1,5 @@
 ---
 title: "README"
-format: html
 output:
   md_document:
      variant: quarto_github
