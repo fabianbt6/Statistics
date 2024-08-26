@@ -1,7 +1,10 @@
 ---
 title: "README"
 format: html
-editor: visual
+output:
+  md_document:
+     variant: quarto_github
+  
 ---
 
 ## Quarto
