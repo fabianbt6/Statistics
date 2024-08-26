@@ -1,8 +1,6 @@
 ---
 title: "README"
-output:
-  md_document:
-     variant: quarto_github
+format: gfm
   
 ---
 
