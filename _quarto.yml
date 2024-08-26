@@ -1,0 +1,14 @@
+project:
+  type: website
+  output-dir: docs      
+  
+website: 
+  navbar: 
+   left:
+      - href: index.qmd
+      
+format:
+  html:
+    theme: cosmo
+
+    
