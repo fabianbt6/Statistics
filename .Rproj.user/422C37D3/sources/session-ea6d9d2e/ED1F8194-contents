@@ -1,5 +1,5 @@
 ---
-title: "Análisis Estadístico"
+title: "Content"
 format: gfm
 ---
 
@@ -9,4 +9,4 @@ knitr::opts_chunk$set(echo = TRUE)
 
 | Tema                                        | Presentación                                                            |
 |---------------------------------------------|--------------------------|
-| Análisis introductorio | \[Descriptivo\] (./Contenido/1.Descriptive Analysis/presentation/presentation.html) |
+| Análisis introductorio | \[Descriptivo\] (./Contenido/1_Descriptive_Analysis/presentation/presentation.html) |

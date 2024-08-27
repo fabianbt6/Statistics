@@ -1,6 +1,6 @@
-# Análisis Estadístico
+# Content
 
 
 | Tema                   | Presentación                                                                        |
 |------------------------|-------------------------------------------------------------------------------------|
-| Análisis introductorio | \[Descriptivo\] (./Contenido/1.Descriptive Analysis/presentation/presentation.html) |
+| Análisis introductorio | \[Descriptivo\] (./Contenido/1_Descriptive_Analysis/presentation/presentation.html) |
