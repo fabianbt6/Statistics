@@ -1,5 +1,6 @@
 ---
-output-file: _index.md
+output-file: 
+  md_document
 ---
 
 ```{r setup, include=FALSE}
