@@ -1,0 +1,36 @@
+---
+title: "Conceptos Básicos"
+editor: visual
+author: "Fabián Brenes Trejos"
+toc:
+  true
+theme: 
+  - litera
+  - ../../Plantillas/fmbt_doc.scss
+---
+
+## Tipo de datos
+
+```{mermaid}
+
+flowchart TD
+    A[Tipos de Datos] 
+
+    A --> B[Continuos]
+    A --> C[Discretos]
+    B --> D["`Ejemplos:
+    - Tasa de interés
+    - Producto Interno Bruto`"]
+    C --> E[Nominal]
+    E --> G["`Ejemplos:
+    - Verdadero o Falso
+    - Activo o Inactivo`"]
+    C --> F[Ordinal]
+    F --> H["`Ejemplos:
+    - 1 = Bajo, 2= Moderado, 3= Severo
+    -1 = Deficiente, 2 = Aceptable, 3 = Bueno`"]
+
+```
+
+
+## Tipo de datos B
