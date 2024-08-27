@@ -3,5 +3,5 @@
 
 ### Análisis Descriptivo
 
-- [Medidas de Tendencia
-  Central](./Contenido/1_Análisis_Descriptivo/Medidas_de_Tendencia_Central/doc.html)
+- [1. Tipos de
+  Datosl](./Contenido/1_Estadística_Inferencial/1_Tipos_de_Datos/doc.html)
