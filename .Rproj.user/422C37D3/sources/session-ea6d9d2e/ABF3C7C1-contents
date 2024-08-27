@@ -1,5 +1,5 @@
 ---
-format: gfm
+output-file: _index.md
 ---
 
 ```{r setup, include=FALSE}
