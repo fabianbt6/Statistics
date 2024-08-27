@@ -1,0 +1,7 @@
+[1,"==> quarto preview doc.qmd --to html --no-watch-inputs --no-browse\n\n"]
+[1,"pandoc \n  to: html\n  output-file: doc.html\n  standalone: true\n  section-divs: true\n  html-math-method: mathjax\n  wrap: none\n  default-image-extension: png\n  \nmetadata\n  document-css: false\n  link-citations: true\n  date-format: long\n  lang: en\n  title: Tipo de Datos\n  editor: visual\n  author:\n    name: Fabián Brenes Trejos\n  theme:\n    light:\n      - sketchy\n    dark:\n      - sketchy\n  \n"]
+[1,"Output created: doc.html\n\nWatching files for changes\nBrowse at http://localhost:3602/\n"]
+[1,"pandoc \n  to: html\n  output-file: doc.html\n  standalone: true\n  section-divs: true\n  html-math-method: mathjax\n  wrap: none\n  default-image-extension: png\n  \nmetadata\n  document-css: false\n  link-citations: true\n  date-format: long\n  lang: en\n  title: Tipo de Datos\n  editor: visual\n  author:\n    name: Fabián Brenes Trejos\n  theme:\n    light:\n      - litera\n  \n"]
+[1,"Output created: doc.html\n\nWatching files for changes\n"]
+[1,"pandoc \n  to: html\n  output-file: doc.html\n  standalone: true\n  section-divs: true\n  html-math-method: mathjax\n  wrap: none\n  default-image-extension: png\n  \nmetadata\n  document-css: false\n  link-citations: true\n  date-format: long\n  lang: en\n  title: Tipo de Datos\n  editor: visual\n  author:\n    name: Fabián Brenes Trejos\n  theme:\n    light:\n      - litera\n  \n"]
+[1,"Output created: doc.html\n\nWatching files for changes\n"]
