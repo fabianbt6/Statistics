@@ -7,6 +7,6 @@ format: gfm
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-| Tema                                        | Presentación                                                            |
+| Tema                                        | Presentación                                                        |
 |---------------------------------------------|--------------------------|
 | Análisis introductorio | \[Descriptivo\] (./Contenido/1_Descriptive_Analysis/presentation/presentation.html) |
