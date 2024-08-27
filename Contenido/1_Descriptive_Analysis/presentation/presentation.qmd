@@ -1,5 +1,5 @@
 ---
-title: "Análisis estadístico introductorio"
+title: "Medidas de Tendencia Central"
 subtitle: "Estadística"
 author: 
   - Fabián Brenes Trejos

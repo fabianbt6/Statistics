@@ -1,6 +1,7 @@
 # Contenido
 
 
-| Tema                   | Presentación                                                                     |
-|------------------------|----------------------------------------------------------------------------------|
-| Análisis introductorio | [Descriptivo](./Contenido/1_Descriptive_Analysis/presentation/presentation.html) |
+### Análisis introductorio
+
+- [Medidas de Tendencia
+  Central](./Contenido/1_Descriptive_Analysis/presentation/presentation.html)
