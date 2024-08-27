@@ -9,6 +9,7 @@ format:
     theme: [../../template.scss]
 editor: visual
 fontsize: 26px
+
 ---
 
 ```{r, include=FALSE}

@@ -1,12 +1,10 @@
 project:
   type: website
-  output-dir: docs      
   
 website: 
-
   navbar:
    left:
-      - href: index.qmd
+      - href: readme.qmd
         text: "Análisis Estadístico"
 
       
