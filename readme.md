@@ -3,5 +3,5 @@
 
 ### Estadística Inferencial
 
-1.  [Tipos de
-    Datos](./Contenido/1_Estadística_Inferencial/1_Tipos_de_Datos/doc.html)
+1.  [Conceptos
+    Básicos](./Contenido/1_Estadística_Inferencial/1_Conceptos_Básicos/doc.html)
