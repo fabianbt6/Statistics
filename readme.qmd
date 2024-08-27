@@ -7,6 +7,6 @@ format: gfm
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### Análisis introductorio
+### Análisis Descriptivo
 
--   [Medidas de Tendencia Central](./Contenido/1_Descriptive_Analysis/presentation/presentation.html)
+-   [Medidas de Tendencia Central](./Contenido/1_Análisis_Descriptivo/presentation/presentation.html)

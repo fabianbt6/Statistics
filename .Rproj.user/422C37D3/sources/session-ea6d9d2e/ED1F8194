@@ -3,7 +3,7 @@
     "path": "C:/Users/FBrenes/OneDrive - Habitat for Humanity International/Estadística/Docencia/Statistics/readme.qmd",
     "project_path": "readme.qmd",
     "type": "quarto_markdown",
-    "hash": "2912168295",
+    "hash": "2839832453",
     "contents": "",
     "dirty": false,
     "created": 1724724828849.0,
@@ -12,7 +12,7 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "9,0",
+        "cursorPosition": "9,24",
         "scrollLine": "2",
         "rmdVisualMode": "false",
         "rmdVisualCollapsedChunks": "",
@@ -22,11 +22,11 @@
         "docOutlineSize": "27"
     },
     "folds": "",
-    "lastKnownWriteTime": 1724767342,
+    "lastKnownWriteTime": 1724768462,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1724767342043,
+    "last_content_update": 1724768463021,
     "read_only": false,
     "read_only_alternatives": []
 }
