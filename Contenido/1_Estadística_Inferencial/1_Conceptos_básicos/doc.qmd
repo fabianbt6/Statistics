@@ -32,5 +32,12 @@ flowchart TD
 
 ```
 
+## Medidas de Tendencia Central
 
-## Tipo de datos B
+### Media
+
+$$
+\begin{equation}
+    \bar{x} = \frac{1}{n}(x_1 + x_2 + \dots{} +  x_n) = \sum ^ n _ {i=1}  x_i,
+    \end{equation}
+$$

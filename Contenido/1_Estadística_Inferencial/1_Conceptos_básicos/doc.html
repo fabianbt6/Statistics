@@ -38,6 +38,35 @@ ul.task-list li input[type="checkbox"] {
 <script src="doc_files/libs/quarto-diagram/mermaid-init.js"></script>
 <link href="doc_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -50,7 +79,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#tipo-de-datos" id="toc-tipo-de-datos" class="nav-link active" data-scroll-target="#tipo-de-datos">Tipo de datos</a></li>
-  <li><a href="#tipo-de-datos-b" id="toc-tipo-de-datos-b" class="nav-link" data-scroll-target="#tipo-de-datos-b">Tipo de datos B</a></li>
+  <li><a href="#medidas-de-tendencia-central" id="toc-medidas-de-tendencia-central" class="nav-link" data-scroll-target="#medidas-de-tendencia-central">Medidas de Tendencia Central</a>
+  <ul class="collapse">
+  <li><a href="#media" id="toc-media" class="nav-link" data-scroll-target="#media">Media</a></li>
+  </ul></li>
   </ul>
 </nav>
 </div>
@@ -102,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
     - Activo o Inactivo`"]
     C --&gt; F[Ordinal]
     F --&gt; H["`Ejemplos:
-    - 1 = Bajo, 2= Moderado, 3= severo
+    - 1 = Bajo, 2= Moderado, 3= Severo
     -1 = Deficiente, 2 = Aceptable, 3 = Bueno`"]
 
 </pre>
@@ -112,8 +144,16 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="tipo-de-datos-b" class="level2">
-<h2 class="anchored" data-anchor-id="tipo-de-datos-b">Tipo de datos B</h2>
+<section id="medidas-de-tendencia-central" class="level2">
+<h2 class="anchored" data-anchor-id="medidas-de-tendencia-central">Medidas de Tendencia Central</h2>
+<section id="media" class="level3">
+<h3 class="anchored" data-anchor-id="media">Media</h3>
+<p><span class="math display">\[
+\begin{equation}
+    \bar{x} = \frac{1}{n}(x_1 + x_2 + \dots{} +  x_n) = \sum ^ n _ {i=1}  x_i,
+    \end{equation}
+\]</span></p>
+</section>
 </section>
 
 </main>
