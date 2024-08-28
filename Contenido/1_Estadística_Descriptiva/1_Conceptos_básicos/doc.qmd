@@ -71,7 +71,7 @@ $$
 \end{equation}
 $$
 
-### Desviación Estandar
+### Desviación Estándar
 
 Raíz cuadrada de la varianza, con la característica de que el indicador está en la misma escala que los datos.
 
@@ -83,7 +83,7 @@ $$
 
 ### Coeficiente de Variación
 
-Debido a que la desviación estandar y el promedio están en la misma escala, al dividir ambos estadísticos y multiplicar por 100, se obtiene el nivel de dispersión en una escala estándar, que funciona para comparar el grado de dispersión entre distintas distribuciones de datos.
+Debido a que la desviación estándar y el promedio están en la misma escala, al dividir ambos estadísticos y multiplicar por 100, se obtiene el nivel de dispersión en una escala estándar, que funciona para comparar el grado de dispersión entre distintas distribuciones de datos.
 
 $$
 \begin{equation}
