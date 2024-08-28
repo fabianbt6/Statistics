@@ -47,3 +47,5 @@ $$
 ### Mediana
 
 ### Varianza
+
+### Desviación Estandar
