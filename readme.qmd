@@ -9,4 +9,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Estadística Descriptiva
 
-1. [Conceptos Básicos](./Contenido/1_Estadística_Descriptiva/1_Conceptos_básicos/doc.html)
+1. [Conceptos Básicos](./Contenido/1_Estadística_Descriptiva/1_Conceptos_Básicos/doc.html)
+
+2. 1. [Distribuciones de Probabilidad](./Contenido/1_Estadística_Descriptiva/2_Distribuciones_de_Probabilidad/doc.html)
