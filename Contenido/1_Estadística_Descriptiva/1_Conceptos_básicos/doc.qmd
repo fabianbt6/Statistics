@@ -45,3 +45,5 @@ $$
 $$
 
 ### Mediana
+
+### Varianza
