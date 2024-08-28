@@ -2,17 +2,21 @@
 title: "Conceptos Básicos"
 editor: visual
 author: "Fabián Brenes Trejos"
-toc:
-  true
-theme: 
-  - litera
+html:
+  code-fold: true
+  toc: true
+  number-sections: true
+  html-math-method: katex
+  theme:
+  - cosmo
   - ../../Plantillas/fmbt_doc.scss
 ---
 
 ## Tipo de datos
 
+' fuente: 
 ```{mermaid}
-
+ 
 flowchart TD
     A[Tipos de Datos] 
 
