@@ -36,6 +36,8 @@ flowchart TD
 
 ### Media
 
+Es el valor medio en un set de datos ordenados
+
 $$
 \begin{equation}
     \bar{x} = \frac{1}{n}(x_1 + x_2 + \dots{} +  x_n) = \sum ^ n _ {i=1}  x_i,
