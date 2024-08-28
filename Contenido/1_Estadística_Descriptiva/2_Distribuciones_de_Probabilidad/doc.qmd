@@ -13,7 +13,8 @@ theme:
 ---
 
 # Distribuciones Discretas
+Se va incluir código de R y derivaciones matemáticas de las principales distribuciones
 
 # Distribuciones Continuas
 
-## Referencias
+# Referencias
