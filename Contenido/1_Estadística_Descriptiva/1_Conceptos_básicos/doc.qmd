@@ -2,19 +2,20 @@
 title: "Conceptos Básicos"
 editor: visual
 author: "Fabián Brenes Trejos"
-html:
-  code-fold: true
-  toc: true
-  number-sections: true
-  html-math-method: katex
-  theme:
+toc: true
+bibliography: ../references.bib
+number-sections: true
+code-fold: true
+html-math-method: katex
+theme:
   - cosmo
   - ../../Plantillas/fmbt_doc.scss
+nocite: |
+  @*
 ---
 
 ## Tipo de datos
 
-' fuente: 
 ```{mermaid}
  
 flowchart TD
@@ -36,20 +37,42 @@ flowchart TD
 
 ```
 
-## Medidas de Tendencia Central
+## Estadísticos generales
 
-### Media
+Los estadísticos descriptivos generales para datos cuantitativos se agrupan en [@HLee2023]:
 
-Es el valor medio en un set de datos ordenados
+### Medidas de tendencia central
+
+#### Media
+
+Suma de todas las observaciones dividida por el total de observaciones
 
 $$
 \begin{equation}
-    \bar{x} = \frac{1}{n}(x_1 + x_2 + \dots{} +  x_n) = \sum ^ n _ {i=1}  x_i,
-    \end{equation}
+    \bar{x} = \frac{1}{n}(x_1 + x_2 + \dots{} +  x_n) =\sum ^ n _ {i=1}  x_i,
+\end{equation} 
 $$
 
-### Mediana
+#### Mediana
 
-### Varianza
+Valor del medio
 
-### Desviación Estandar
+#### Moda
+
+El valor más frecuente
+
+### Medidas de Dispersión
+
+#### Varianza
+
+Es el promedio de la desviación de la media al cuadrado.
+
+$$ 
+\begin{equation}
+    \sigma ^ 2  = \frac {\sum ^ n _ {i=1}  (x_i - \bar{x}) ^ 2}{n - 1}
+\end{equation}
+$$
+
+#### Desviación Estandar
+
+## Referencias
