@@ -1,0 +1,18 @@
+---
+title: "Distribuciones de Probabilidad"
+editor: visual
+author: "Fabián Brenes Trejos"
+toc: true
+bibliography: ../references.bib
+number-sections: true
+code-fold: true
+html-math-method: katex
+theme:
+  - cosmo
+  - ../../Plantillas/fmbt_doc.scss
+---
+
+# Distribuciones Discretas
+
+
+## Referencias

@@ -10,11 +10,9 @@ html-math-method: katex
 theme:
   - cosmo
   - ../../Plantillas/fmbt_doc.scss
-nocite: |
-  @*
 ---
 
-## Tipo de datos
+# Tipo de datos
 
 ```{mermaid}
  
@@ -37,13 +35,13 @@ flowchart TD
 
 ```
 
-## Estadísticos generales
+# Estadísticos generales
 
 Los estadísticos descriptivos generales para datos cuantitativos se agrupan en [@HLee2023]:
 
-### Medidas de tendencia central
+## Medidas de tendencia central
 
-#### Media
+### Media
 
 Suma de todas las observaciones dividida por el total de observaciones
 
@@ -53,19 +51,19 @@ $$
 \end{equation} 
 $$
 
-#### Mediana
+### Mediana
 
-Valor del medio
+Valor del medio.
 
-#### Moda
+### Moda
 
-El valor más frecuente
+El valor más frecuente.
 
-### Medidas de Dispersión
+## Medidas de Dispersión
 
-#### Varianza
+### Varianza
 
-Es el promedio de la desviación de la media al cuadrado.
+Es el promedio de la desviación de la media al cuadrado. Entre mayor es este indicador, mayor dispersión hay en la data.
 
 $$ 
 \begin{equation}
@@ -73,6 +71,24 @@ $$
 \end{equation}
 $$
 
-#### Desviación Estandar
+### Desviación Estandar
 
-## Referencias
+Raíz cuadrada de la varianza, con la característica de que el indicador está en la misma escala que los datos.
+
+$$ 
+\begin{equation}
+    \sigma   = \sqrt{\frac {\sum ^ n _ {i=1}  (x_i - \bar{x}) ^ 2}{n - 1}} 
+\end{equation}
+$$
+
+### Coeficiente de Variación
+
+Debido a que la desviación estandar y el promedio están en la misma escala, al dividir ambos estadísticos y multiplicar por 100, se obtiene el nivel de dispersión en una escala estándar. Este indicador funciona para comparar el grado de dispersión entre distintas distribuciones de datos.
+
+$$
+\begin{equation}
+    CV = \frac{\sigma}{\bar{x}} * 100
+\end{equation}
+$$
+
+# Referencias
