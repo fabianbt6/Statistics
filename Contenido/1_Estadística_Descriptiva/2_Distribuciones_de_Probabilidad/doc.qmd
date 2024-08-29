@@ -12,22 +12,38 @@ theme:
 bibliography: ../../referencias.bib
 cite: |
   @Sahu2024
+  @Hogg2015
 ---
 
 # Distribuciones de Probabilidad de una Variable Aleatoria
 
-Se define **variable aleatoria** a todos los posibles resultados que una variable puede obtener al realizar experimentos aleatorios. Por ejemplo: los posibles resultados de tirar una moneda al aire y obtener cara o escudo, en este caso, se puede denotar la variable aleatoria $X$ para la cantidad de caras obtenidas al tirar la moneda cierta cantidad de veces.  
+En un experimento aleatorio con resultados en el espacio $S$, una función $X$ que asigna un único número real $X(s) = x$ a cada elemento $s$ en $S$ se define como **variable aleatoria**. El espacio de $X$ es el conjunto de números reales $\{x:X(s) = x, s \in S\}$.
 
-Por otra parte, una distribución de probabilidad distribuye el total de la probabilidad (que equivale a 1 o 100%) entre todos los posibles valores de la variable aleatoria.  
+Es decir, una **variable aleatoria** es una variable que puede asumir valores de un experimento aleatorio específico. Por ejemplo: los posibles resultados de tirar una moneda al aire y obtener cara o escudo, en este caso, se puede denotar la variable aleatoria $X$ para la cantidad de caras obtenidas al tirar la moneda cierta cantidad de veces.
 
+Por otra parte, una distribución de probabilidad distribuye el total de la probabilidad (que equivale a 1 o 100%) entre todos los posibles valores de la variable aleatoria.
 
 ## Distribuciones Discretas
 
-Para variables discretas se define la función $f(x)$ para denotar $P(X = x)$, en donde $f(x)$ es la función de probabilidad o la función de masa de probabilidad de la variable aleatoria $X$.   
+Para variables discretas se define la función $f(x)$ para denotar $P(X = x)$, en donde $f(x)$ es la función de probabilidad o la **función de masa de probabilidad** (pmf por sus siglas en inglés) de la variable aleatoria $X$.
 
+La pmf $f(x)$ de una variable discreta $X$ cumple las siguientes condiciones:
+
+$$ 
+\begin{equation}
+\begin{align}
+
+&\textrm{(a)} \quad f(x) > 0, \quad x \in S; \\
+&\textrm{(b)} \quad \sum_{x \in S} f(x) = 1; \\
+&\textrm{(c)} \quad P(X \in A) = \sum_{x \in A} f(x), \quad \textrm{donde} \quad A \subset S.   
+
+\end{align}
+\end{equation} 
+
+$$
 
 ## Distribuciones Continuas
-Para una variable continua, $P(X = x)$  
 
+Para una variable continua, $P(X = x)$
 
 # Referencias

@@ -147,11 +147,23 @@ window.Quarto = {
 
 <section id="distribuciones-de-probabilidad-de-una-variable-aleatoria" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Distribuciones de Probabilidad de una Variable Aleatoria</h1>
-<p>Se define <strong>variable aleatoria</strong> a todos los posibles resultados que una variable puede obtener al realizar experimentos aleatorios. Por ejemplo: los posibles resultados de tirar una moneda al aire y obtener cara o escudo, en este caso, se puede denotar la variable aleatoria <span class="math inline">X</span> para la cantidad de caras obtenidas al tirar la moneda cierta cantidad de veces.</p>
+<p>En un experimento aleatorio con resultados en el espacio <span class="math inline">S</span>, una función <span class="math inline">X</span> que asigna un único número real <span class="math inline">X(s) = x</span> a cada elemento <span class="math inline">s</span> en <span class="math inline">S</span> se define como <strong>variable aleatoria</strong>. El espacio de <span class="math inline">X</span> es el conjunto de números reales <span class="math inline">\{x:X(s) = x, s \in S\}</span>.</p>
+<p>Es decir, una <strong>variable aleatoria</strong> es una variable que puede asumir valores de un experimento aleatorio específico. Por ejemplo: los posibles resultados de tirar una moneda al aire y obtener cara o escudo, en este caso, se puede denotar la variable aleatoria <span class="math inline">X</span> para la cantidad de caras obtenidas al tirar la moneda cierta cantidad de veces.</p>
 <p>Por otra parte, una distribución de probabilidad distribuye el total de la probabilidad (que equivale a 1 o 100%) entre todos los posibles valores de la variable aleatoria.</p>
 <section id="distribuciones-discretas" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="distribuciones-discretas"><span class="header-section-number">1.1</span> Distribuciones Discretas</h2>
-<p>Para variables discretas se define la función <span class="math inline">f(x)</span> para denotar <span class="math inline">P(X = x)</span>, en donde <span class="math inline">f(x)</span> es la función de probabilidad o la función de masa de probabilidad de la variable aleatoria <span class="math inline">X</span>.</p>
+<p>Para variables discretas se define la función <span class="math inline">f(x)</span> para denotar <span class="math inline">P(X = x)</span>, en donde <span class="math inline">f(x)</span> es la función de probabilidad o la <strong>función de masa de probabilidad</strong> (pmf por sus siglas en inglés) de la variable aleatoria <span class="math inline">X</span>.</p>
+<p>La pmf <span class="math inline">f(x)</span> de una variable discreta <span class="math inline">X</span> cumple las siguientes condiciones:</p>
+<p>$$ <span class="math display">\begin{equation}
+\begin{align}
+
+&amp;\textrm{(a)} \quad f(x) &gt; 0, \quad x \in S; \\
+&amp;\textrm{(b)} \quad \sum_{x \in S} f(x) = 1; \\
+&amp;\textrm{(c)} \quad P(X \in A) = \sum_{x \in A} f(x), \quad \textrm{donde} \quad A \subset S.   
+
+\end{align}
+\end{equation}</span></p>
+<p>$$</p>
 </section>
 <section id="distribuciones-continuas" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="distribuciones-continuas"><span class="header-section-number">1.2</span> Distribuciones Continuas</h2>
@@ -164,6 +176,9 @@ window.Quarto = {
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">2 Referencias</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Hogg2015" class="csl-entry" role="listitem">
+Hogg, Robert V.., Elliot A.. Tanis, and Dale L.. Zimmerman. 2015. <em>Probability and Statistical Inference</em>. Pearson.
+</div>
 <div id="ref-Sahu2024" class="csl-entry" role="listitem">
 Sahu, Sujit K. 2024. <em>Introduction to Probability, Statistics &amp; r</em>. <em>Introduction to Probability, Statistics &amp; R</em>. Springer International Publishing. <a href="https://doi.org/10.1007/978-3-031-37865-2">https://doi.org/10.1007/978-3-031-37865-2</a>.
 </div>
