@@ -111,7 +111,12 @@ window.Quarto = {
   <ul>
   <li><a href="#distribuciones-de-probabilidad-de-una-variable-aleatoria" id="toc-distribuciones-de-probabilidad-de-una-variable-aleatoria" class="nav-link active" data-scroll-target="#distribuciones-de-probabilidad-de-una-variable-aleatoria"><span class="header-section-number">1</span> Distribuciones de Probabilidad de una Variable Aleatoria</a>
   <ul class="collapse">
-  <li><a href="#distribuciones-discretas" id="toc-distribuciones-discretas" class="nav-link" data-scroll-target="#distribuciones-discretas"><span class="header-section-number">1.1</span> Distribuciones Discretas</a></li>
+  <li><a href="#distribuciones-discretas" id="toc-distribuciones-discretas" class="nav-link" data-scroll-target="#distribuciones-discretas"><span class="header-section-number">1.1</span> Distribuciones Discretas</a>
+  <ul class="collapse">
+  <li><a href="#distribución-de-bernoulli" id="toc-distribución-de-bernoulli" class="nav-link" data-scroll-target="#distribución-de-bernoulli"><span class="header-section-number">1.1.1</span> Distribución de Bernoulli</a></li>
+  <li><a href="#distribución-binomial" id="toc-distribución-binomial" class="nav-link" data-scroll-target="#distribución-binomial"><span class="header-section-number">1.1.2</span> Distribución Binomial</a></li>
+  <li><a href="#distribución-geométrica" id="toc-distribución-geométrica" class="nav-link" data-scroll-target="#distribución-geométrica"><span class="header-section-number">1.1.3</span> Distribución Geométrica</a></li>
+  </ul></li>
   <li><a href="#distribuciones-continuas" id="toc-distribuciones-continuas" class="nav-link" data-scroll-target="#distribuciones-continuas"><span class="header-section-number">1.2</span> Distribuciones Continuas</a></li>
   </ul></li>
   <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">2</span> Referencias</a></li>
@@ -154,16 +159,23 @@ window.Quarto = {
 <h2 data-number="1.1" class="anchored" data-anchor-id="distribuciones-discretas"><span class="header-section-number">1.1</span> Distribuciones Discretas</h2>
 <p>Para variables discretas se define la función <span class="math inline">f(x)</span> para denotar <span class="math inline">P(X = x)</span>, en donde <span class="math inline">f(x)</span> es la función de probabilidad o la <strong>función de masa de probabilidad</strong> (pmf por sus siglas en inglés) de la variable aleatoria <span class="math inline">X</span>.</p>
 <p>La pmf <span class="math inline">f(x)</span> de una variable discreta <span class="math inline">X</span> cumple las siguientes condiciones:</p>
-<p>$$ <span class="math display">\begin{equation}
+<p><span class="math display">
 \begin{align}
-
-&amp;\textrm{(a)} \quad f(x) &gt; 0, \quad x \in S; \\
-&amp;\textrm{(b)} \quad \sum_{x \in S} f(x) = 1; \\
-&amp;\textrm{(c)} \quad P(X \in A) = \sum_{x \in A} f(x), \quad \textrm{donde} \quad A \subset S.   
-
+&amp;\textrm{(a)} \quad f(x) &gt; 0, \quad x \in S; \notag \\
+&amp;\textrm{(b)} \quad \sum_{x \in S} f(x) = 1; \notag \\
+&amp;\textrm{(c)} \quad P(X \in A) = \sum_{x \in A} f(x), \quad \textrm{donde} \quad A \subset S. \notag \\   
 \end{align}
-\end{equation}</span></p>
-<p>$$</p>
+</span></p>
+<p><strong>Funciones de probabilidad acumulada</strong> (cdf por sus siglas en inglés) corresponde a <span class="math inline">F(x) = P(X \leq x)</span>, donde <span class="math inline">-\infty &lt; x &lt; \infty</span>.</p>
+<section id="distribución-de-bernoulli" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="distribución-de-bernoulli"><span class="header-section-number">1.1.1</span> Distribución de Bernoulli</h3>
+</section>
+<section id="distribución-binomial" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="distribución-binomial"><span class="header-section-number">1.1.2</span> Distribución Binomial</h3>
+</section>
+<section id="distribución-geométrica" class="level3" data-number="1.1.3">
+<h3 data-number="1.1.3" class="anchored" data-anchor-id="distribución-geométrica"><span class="header-section-number">1.1.3</span> Distribución Geométrica</h3>
+</section>
 </section>
 <section id="distribuciones-continuas" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="distribuciones-continuas"><span class="header-section-number">1.2</span> Distribuciones Continuas</h2>

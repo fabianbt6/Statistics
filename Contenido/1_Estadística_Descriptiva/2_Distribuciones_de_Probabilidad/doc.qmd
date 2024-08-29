@@ -29,18 +29,21 @@ Para variables discretas se define la función $f(x)$ para denotar $P(X = x)$, e
 
 La pmf $f(x)$ de una variable discreta $X$ cumple las siguientes condiciones:
 
-$$ 
-\begin{equation}
-\begin{align}
-
-&\textrm{(a)} \quad f(x) > 0, \quad x \in S; \\
-&\textrm{(b)} \quad \sum_{x \in S} f(x) = 1; \\
-&\textrm{(c)} \quad P(X \in A) = \sum_{x \in A} f(x), \quad \textrm{donde} \quad A \subset S.   
-
-\end{align}
-\end{equation} 
-
 $$
+\begin{align}
+&\textrm{(a)} \quad f(x) > 0, \quad x \in S; \notag \\
+&\textrm{(b)} \quad \sum_{x \in S} f(x) = 1; \notag \\
+&\textrm{(c)} \quad P(X \in A) = \sum_{x \in A} f(x), \quad \textrm{donde} \quad A \subset S. \notag \\   
+\end{align}
+$$
+
+**Funciones de probabilidad acumulada** (cdf por sus siglas en inglés) corresponde a $F(x) = P(X \leq x)$, donde $-\infty < x < \infty$.
+
+### Distribución de Bernoulli
+
+### Distribución Binomial
+
+### Distribución Geométrica
 
 ## Distribuciones Continuas
 
