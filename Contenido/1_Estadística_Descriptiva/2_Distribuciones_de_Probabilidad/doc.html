@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="doc_files/libs/clipboard/clipboard.min.js"></script>
@@ -46,9 +66,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#distribuciones-discretas" id="toc-distribuciones-discretas" class="nav-link active" data-scroll-target="#distribuciones-discretas"><span class="header-section-number">1</span> Distribuciones Discretas</a></li>
-  <li><a href="#distribuciones-continuas" id="toc-distribuciones-continuas" class="nav-link" data-scroll-target="#distribuciones-continuas"><span class="header-section-number">2</span> Distribuciones Continuas</a></li>
-  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">3</span> Referencias</a></li>
+  <li><a href="#distribuciones-de-probabilidad-de-una-variable-aleatoria" id="toc-distribuciones-de-probabilidad-de-una-variable-aleatoria" class="nav-link active" data-scroll-target="#distribuciones-de-probabilidad-de-una-variable-aleatoria"><span class="header-section-number">1</span> Distribuciones de Probabilidad de una Variable Aleatoria</a>
+  <ul class="collapse">
+  <li><a href="#distribuciones-discretas" id="toc-distribuciones-discretas" class="nav-link" data-scroll-target="#distribuciones-discretas"><span class="header-section-number">1.1</span> Distribuciones Discretas</a></li>
+  <li><a href="#distribuciones-continuas" id="toc-distribuciones-continuas" class="nav-link" data-scroll-target="#distribuciones-continuas"><span class="header-section-number">1.2</span> Distribuciones Continuas</a></li>
+  </ul></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">2</span> Referencias</a></li>
   </ul>
 </nav>
 </div>
@@ -79,18 +102,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="distribuciones-discretas" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Distribuciones Discretas</h1>
-<p>Se va incluir código de R y derivaciones matemáticas de las principales distribuciones</p>
+<section id="distribuciones-de-probabilidad-de-una-variable-aleatoria" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Distribuciones de Probabilidad de una Variable Aleatoria</h1>
+<p>Una distribución de probabilidad distribuye el total de la probabilidad (que equivale a 1 o 100%) entre todos los posibles valores de la variable aleatoria <span class="citation" data-cites="Sahu2024">(<a href="#ref-Sahu2024" role="doc-biblioref">Sahu 2024</a>)</span>.</p>
+<p>Prueba acá</p>
+<section id="distribuciones-discretas" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="distribuciones-discretas"><span class="header-section-number">1.1</span> Distribuciones Discretas</h2>
 </section>
-<section id="distribuciones-continuas" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Distribuciones Continuas</h1>
+<section id="distribuciones-continuas" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="distribuciones-continuas"><span class="header-section-number">1.2</span> Distribuciones Continuas</h2>
 </section>
-<section id="referencias" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Referencias</h1>
+</section>
+<section id="referencias" class="level1 unnumbered" data-number="2">
+
+
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">2 Referencias</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Sahu2024" class="csl-entry" role="listitem">
+Sahu, Sujit K. 2024. <em>Introduction to Probability, Statistics &amp; r</em>. <em>Introduction to Probability, Statistics &amp; R</em>. Springer International Publishing. <a href="https://doi.org/10.1007/978-3-031-37865-2">https://doi.org/10.1007/978-3-031-37865-2</a>.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

@@ -12,9 +12,14 @@ theme:
   - ../../Plantillas/fmbt_doc.scss
 ---
 
-# Distribuciones Discretas
-Se va incluir código de R y derivaciones matemáticas de las principales distribuciones
+# Distribuciones de Probabilidad de una Variable Aleatoria
 
-# Distribuciones Continuas
+Una distribución de probabilidad distribuye el total de la probabilidad (que equivale a 1 o 100%) entre todos los posibles valores de la variable aleatoria [@Sahu2024].
+
+Prueba acá
+
+## Distribuciones Discretas
+
+## Distribuciones Continuas
 
 # Referencias
