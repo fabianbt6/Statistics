@@ -3,13 +3,15 @@ title: "Conceptos Básicos"
 editor: visual
 author: "Fabián Brenes Trejos"
 toc: true
-bibliography: ../references.bib
+bibliography: ../../referencias.bib
 number-sections: true
 code-fold: true
 html-math-method: katex
 theme:
   - cosmo
   - ../../Plantillas/fmbt_doc.scss
+cite: |
+  @Hlee2023
 ---
 
 # Tipo de datos
@@ -37,7 +39,7 @@ flowchart TD
 
 # Estadísticos generales
 
-Los estadísticos descriptivos generales para datos cuantitativos se agrupan en [@HLee2023]:
+Los estadísticos descriptivos generales para datos cuantitativos se agrupan en:
 
 ## Medidas de tendencia central
 
