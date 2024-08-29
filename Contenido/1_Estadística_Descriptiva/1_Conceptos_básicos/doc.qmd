@@ -3,7 +3,6 @@ title: "Conceptos Básicos"
 editor: visual
 author: "Fabián Brenes Trejos"
 toc: true
-bibliography: ../../referencias.bib
 number-sections: true
 code-fold: true
 html-math-method: katex

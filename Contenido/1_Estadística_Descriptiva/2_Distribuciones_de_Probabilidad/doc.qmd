@@ -3,24 +3,31 @@ title: "Distribuciones de Probabilidad"
 editor: visual
 author: "Fabián Brenes Trejos"
 toc: true
-bibliography: ../references.bib
 number-sections: true
 code-fold: true
 html-math-method: katex
 theme:
   - cosmo
   - ../../Plantillas/fmbt_doc.scss
+bibliography: ../../referencias.bib
 cite: |
   @Sahu2024
 ---
 
 # Distribuciones de Probabilidad de una Variable Aleatoria
 
-Una distribución de probabilidad distribuye el total de la probabilidad (que equivale a 1 o 100%) entre todos los posibles valores de la variable aleatoria.
+Se define **variable aleatoria** a todos los posibles resultados que una variable puede obtener al realizar experimentos aleatorios. Por ejemplo: los posibles resultados de tirar una moneda al aire y obtener cara o escudo, en este caso, se puede denotar la variable aleatoria $X$ para la cantidad de caras obtenidas al tirar la moneda cierta cantidad de veces.  
+
+Por otra parte, una distribución de probabilidad distribuye el total de la probabilidad (que equivale a 1 o 100%) entre todos los posibles valores de la variable aleatoria.  
 
 
 ## Distribuciones Discretas
 
+Para variables discretas se define la función $f(x)$ para denotar $P(X = x)$, en donde $f(x)$ es la función de probabilidad o la función de masa de probabilidad de la variable aleatoria $X$.   
+
+
 ## Distribuciones Continuas
+Para una variable continua, $P(X = x)$  
+
 
 # Referencias

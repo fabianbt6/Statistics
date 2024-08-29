@@ -55,6 +55,49 @@ div.csl-indent {
 <link href="doc_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="doc_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -104,12 +147,15 @@ div.csl-indent {
 
 <section id="distribuciones-de-probabilidad-de-una-variable-aleatoria" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Distribuciones de Probabilidad de una Variable Aleatoria</h1>
-<p>Una distribución de probabilidad distribuye el total de la probabilidad (que equivale a 1 o 100%) entre todos los posibles valores de la variable aleatoria.</p>
+<p>Se define <strong>variable aleatoria</strong> a todos los posibles resultados que una variable puede obtener al realizar experimentos aleatorios. Por ejemplo: los posibles resultados de tirar una moneda al aire y obtener cara o escudo, en este caso, se puede denotar la variable aleatoria <span class="math inline">X</span> para la cantidad de caras obtenidas al tirar la moneda cierta cantidad de veces.</p>
+<p>Por otra parte, una distribución de probabilidad distribuye el total de la probabilidad (que equivale a 1 o 100%) entre todos los posibles valores de la variable aleatoria.</p>
 <section id="distribuciones-discretas" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="distribuciones-discretas"><span class="header-section-number">1.1</span> Distribuciones Discretas</h2>
+<p>Para variables discretas se define la función <span class="math inline">f(x)</span> para denotar <span class="math inline">P(X = x)</span>, en donde <span class="math inline">f(x)</span> es la función de probabilidad o la función de masa de probabilidad de la variable aleatoria <span class="math inline">X</span>.</p>
 </section>
 <section id="distribuciones-continuas" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="distribuciones-continuas"><span class="header-section-number">1.2</span> Distribuciones Continuas</h2>
+<p>Para una variable continua, <span class="math inline">P(X = x)</span></p>
 </section>
 </section>
 <section id="referencias" class="level1 unnumbered" data-number="2">
