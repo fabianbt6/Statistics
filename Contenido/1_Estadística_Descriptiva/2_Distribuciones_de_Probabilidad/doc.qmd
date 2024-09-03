@@ -19,9 +19,62 @@ cite: |
 
 En un experimento aleatorio con resultados en el espacio $S$, una función $X$ que asigna un único número real $X(s) = x$ a cada elemento $s$ en $S$ se define como **variable aleatoria**. El espacio de $X$ es el conjunto de números reales $\{x:X(s) = x, s \in S\}$.
 
-Es decir, una **variable aleatoria** es una variable que puede asumir valores de un experimento aleatorio específico. Por ejemplo: los posibles resultados de tirar una moneda al aire y obtener cara o escudo, en este caso, se puede denotar la variable aleatoria $X$ para la cantidad de caras obtenidas al tirar la moneda cierta cantidad de veces.
+Es decir, una **variable aleatoria** puede asumir valores de un experimento aleatorio específico. Por ejemplo: los posibles resultados de tirar una moneda al aire y obtener cara o escudo, en este caso, se puede denotar la variable aleatoria $X$ para la cantidad de caras obtenidas al tirar la moneda cierta cantidad de veces.
 
 Por otra parte, una distribución de probabilidad distribuye el total de la probabilidad (que equivale a 1 o 100%) entre todos los posibles valores de la variable aleatoria.
+
+## Esperanza Matemática
+
+Ese el valor promedio de una variable aleatoria. Se calcula como la suma o la integral de los valores $x$ multiplicado por la probabilidad.
+
+$$
+  E(X) = \mu =
+    \begin{cases}
+      \sum_{all x}{x f(x)} \quad  \text{si $X$ es discreta,} \\
+      \int ^ {\infty} _ {-\infty} {x f(x) dx} \quad  \text{si $X$ es aleatoria}
+    \end{cases}    
+$$
+
+
+**Ejemplo:** Esperanza matemática de lanzar un dado con 6 caras y una probabilidad de $1 / 6$ de obtener cada lado.
+
+```{r}
+
+x <- seq(1:6)
+
+prob <- 1 / 6
+
+mu = sum(x * prob)
+
+cat("E(x):", mu)
+
+```
+
+## Varianza
+
+Mide la variabilidad de una variable aleatoria.
+
+$$
+  Var(X)  = E(X - \mu) ^ 2 = \sigma ^ 2 = 
+    \begin{cases}
+      \sum_{all x}{(x - \mu) ^ 2} f(x) \quad  \text{si $X$ es discreta,} \\
+      \int ^ {\infty} _ {-\infty} {(x - \mu) ^ 2 f(x) dx} \quad  \text{si $X$ es aleatoria}
+    \end{cases}    
+$$
+
+La varianza de una variable aleatoria es el valor esperado de su cuadrado menos el cuadrado de su valor esperado. 
+
+
+$$
+\begin{align}
+Var(X) = & E(X - \mu) ^ 2 \notag \\
+& E(X ^ 2 - 2 X \mu + \mu ^ 2) \quad \text{Aplicando fórmula notable} \notag \\
+& E(X ^ 2) - 2 E(X) \mu + \mu ^ 2 \notag \\
+& E(X ^ 2) - 2 \mu \mu + \mu ^ 2 \quad \text{Aplicando que $E(X) = \mu$} \notag \\
+& E(X ^ 2) - 2\mu ^ 2 + \mu ^ 2 \notag \\
+& E(X ^ 2) - \mu ^ 2 \notag
+\end{align}
+$$
 
 ## Distribuciones Discretas
 
@@ -39,6 +92,7 @@ $$
 
 **Funciones de probabilidad acumulada** (cdf por sus siglas en inglés) corresponde a $F(x) = P(X \leq x)$, donde $-\infty < x < \infty$.
 
+
 ### Distribución de Bernoulli
 
 ### Distribución Binomial
@@ -47,6 +101,8 @@ $$
 
 ## Distribuciones Continuas
 
-Para una variable continua, $P(X = x)$
+Para una variable continua, $P(X = x)$... 
+
+#### Esperanza Matemática de una variable Continua
 
 # Referencias
