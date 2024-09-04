@@ -40,13 +40,13 @@ $$
 
 ```{r}
 
-x <- seq(1:6)
+X <- seq(1:6)
 
 prob <- 1 / 6
 
-mu = sum(x * prob)
+mu = sum(X * prob)
 
-cat("E(x):", mu)
+cat("E(X):", mu)
 
 ```
 
@@ -70,7 +70,7 @@ $$
 Var(X) = & E(X - \mu) ^ 2 \notag \\
 & E(X ^ 2 - 2 X \mu + \mu ^ 2) \quad \text{Aplicando fórmula notable} \notag \\
 & E(X ^ 2) - 2 E(X) \mu + \mu ^ 2 \notag \\
-& E(X ^ 2) - 2 \mu \mu + \mu ^ 2 \quad \text{Aplicando que $E(X) = \mu$} \notag \\
+& E(X ^ 2) - 2 \mu \mu + \mu ^ 2 \quad \text{Dado que $E(X) = \mu$} \notag \\
 & E(X ^ 2) - 2\mu ^ 2 + \mu ^ 2 \notag \\
 & E(X ^ 2) - \mu ^ 2 \notag
 \end{align}

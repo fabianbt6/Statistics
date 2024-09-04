@@ -205,16 +205,16 @@ window.Quarto = {
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>)</span>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>X <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>prob <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">/</span> <span class="dv">6</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>mu <span class="ot">=</span> <span class="fu">sum</span>(x <span class="sc">*</span> prob)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>mu <span class="ot">=</span> <span class="fu">sum</span>(X <span class="sc">*</span> prob)</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"E(x):"</span>, mu)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"E(X):"</span>, mu)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>E(x): 3.5</code></pre>
+<pre><code>E(X): 3.5</code></pre>
 </div>
 </div>
 </section>
@@ -234,7 +234,7 @@ window.Quarto = {
 Var(X) = &amp; E(X - \mu) ^ 2 \notag \\
 &amp; E(X ^ 2 - 2 X \mu + \mu ^ 2) \quad \text{Aplicando fórmula notable} \notag \\
 &amp; E(X ^ 2) - 2 E(X) \mu + \mu ^ 2 \notag \\
-&amp; E(X ^ 2) - 2 \mu \mu + \mu ^ 2 \quad \text{Aplicando que $E(X) = \mu$} \notag \\
+&amp; E(X ^ 2) - 2 \mu \mu + \mu ^ 2 \quad \text{Dado que $E(X) = \mu$} \notag \\
 &amp; E(X ^ 2) - 2\mu ^ 2 + \mu ^ 2 \notag \\
 &amp; E(X ^ 2) - \mu ^ 2 \notag
 \end{align}
