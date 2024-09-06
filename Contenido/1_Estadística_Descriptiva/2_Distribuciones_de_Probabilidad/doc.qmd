@@ -35,20 +35,35 @@ $$
     \end{cases}    
 $$
 
-
 **Ejemplo:** Esperanza matemática de lanzar un dado con 6 caras y una probabilidad de $1 / 6$ de obtener cada lado.
 
 ```{r}
 
 X <- seq(1:6)
 
-prob <- 1 / 6
+prob <- 1 / length(X)
 
 mu = sum(X * prob)
 
 cat("E(X):", mu)
 
 ```
+
+**Ejemplo:** Considere una distribución uniforme $U(a,b)$ con pdf $f(x) = \frac{1}{b - a}, a\le x \le b$.
+
+$$
+\begin{align}
+E(X) = & \int ^ {\infty} _ {-\infty} x f(x) dx \notag \\
+& \int ^ {b} _ {a} x * \frac{1}{b-a} dx \notag \\
+& \frac{1}{b-a} \int ^ {b} _ {a} x  dx \notag \quad \notag \\
+& F(x) = \frac{x ^ 2}{2} \notag \quad \notag \\
+& \Big| ^ b _ a = \frac{1}{b-a} * \frac{b ^ 2}{2} - \frac{1}{b - a} * \frac{a ^ 2}{2} \notag \\ 
+& \Big| ^ b _ a = \frac{b ^ 2}{2(b - a)} - \frac{a ^ 2}{2(b - a)} \notag \\
+& \Big| ^ b _ a = \frac{b ^ 2 - a ^ 2}{2(b - a)} \notag \\
+& \Big| ^ b _ a = \frac{(b - a)(b + a)}{2(b - a)} \notag \\
+E(X) = & \frac{(b + a)}{2} \notag \\
+\end{align}
+$$
 
 ## Varianza
 
@@ -62,8 +77,7 @@ $$
     \end{cases}    
 $$
 
-La varianza de una variable aleatoria es el valor esperado de su cuadrado menos el cuadrado de su valor esperado. 
-
+La varianza de una variable aleatoria es el valor esperado de su cuadrado menos el cuadrado de su valor esperado.
 
 $$
 \begin{align}
@@ -76,6 +90,31 @@ Var(X) = & E(X - \mu) ^ 2 \notag \\
 \end{align}
 $$
 
+## Cuantiles
+Son medidas que separan la distribución en diferentes partes iguales. Por ejemplo la mediana (llamada el percentil 50), separa la distribución en dos partes iguales. Utilizando la distribución de probabilidad acumulada, la mediana se obtiene al resolver la ecuación $F(x) = 0.5$. 
+En general se define el $p ^ {to}$ quintil  se obtiene a solucionar la siguiente ecuación:
+
+$$
+F(x) = p, \quad \text{Para cada } 0 < p < 1.
+$$
+**Ejemplo:** Para la distribución uniforme definida por el *pdf*:
+
+$$
+f(x) = \frac{1}{b - a}, \text{ si }  a < \le x \le b
+$$
+Donde, según el teorema fundamental del cálculo:
+
+$$
+f(x) =  \frac{dF(x)}{dx}
+$$
+Se obtiene: 
+
+$$
+\begin{align}
+F(x) = & \int ^ {x} _ {a} \frac{1}{b - a} dx  \notag \\
+F(x) = & 1 \frac{1}{b-a}\int ^ {x} _ {a} \frac{1}{b - a} dx \notag \\
+\end{align}
+$$
 ## Distribuciones Discretas
 
 Para variables discretas se define la función $f(x)$ para denotar $P(X = x)$, en donde $f(x)$ es la función de probabilidad o la **función de masa de probabilidad** (pmf por sus siglas en inglés) de la variable aleatoria $X$.
@@ -92,7 +131,6 @@ $$
 
 **Funciones de probabilidad acumulada** (cdf por sus siglas en inglés) corresponde a $F(x) = P(X \leq x)$, donde $-\infty < x < \infty$.
 
-
 ### Distribución de Bernoulli
 
 ### Distribución Binomial
@@ -101,7 +139,7 @@ $$
 
 ## Distribuciones Continuas
 
-Para una variable continua, $P(X = x)$... 
+Para una variable continua, $P(X = x)$...
 
 #### Esperanza Matemática de una variable Continua
 

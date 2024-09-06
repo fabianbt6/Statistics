@@ -207,7 +207,7 @@ window.Quarto = {
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>X <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>prob <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">/</span> <span class="dv">6</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>prob <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">/</span> <span class="fu">length</span>(X)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>mu <span class="ot">=</span> <span class="fu">sum</span>(X <span class="sc">*</span> prob)</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
@@ -217,6 +217,20 @@ window.Quarto = {
 <pre><code>E(X): 3.5</code></pre>
 </div>
 </div>
+<p><strong>Ejemplo:</strong> Considere una distribución uniforme <span class="math inline">U(a,b)</span> con pdf <span class="math inline">f(x) = \frac{1}{b - a}, a\le x \le b</span>.</p>
+<p><span class="math display">
+\begin{align}
+E(X) = &amp; \int ^ {\infty} _ {-\infty} x f(x) dx \notag \\
+&amp; \int ^ {b} _ {a} x * \frac{1}{b-a} dx \notag \\
+&amp; \frac{1}{b-a} \int ^ {b} _ {a} x  dx \notag \quad \notag \\
+&amp; F(x) = x = \frac{x ^ 2}{2} \notag \quad \notag \\
+&amp; \Big| ^ b _ a = \frac{1}{b-a} * \frac{b ^ 2}{2} - \frac{1}{b - a} * \frac{a ^ 2}{2} \notag \\
+&amp; \Big| ^ b _ a = \frac{b ^ 2}{2(b - a)} - \frac{a ^ 2}{2(b - a)} \notag \\
+&amp; \Big| ^ b _ a = \frac{b ^ 2 - a ^ 2}{2(b - a)} \notag \\
+&amp; \Big| ^ b _ a = \frac{(b - a)(b + a)}{2(b - a)} \notag \\
+E(X) = &amp; \frac{(b + a)}{2} \notag \\
+\end{align}
+</span></p>
 </section>
 <section id="varianza" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="varianza"><span class="header-section-number">1.2</span> Varianza</h2>
