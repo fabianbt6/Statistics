@@ -193,7 +193,9 @@ VAR(X) =& p - 2 p ^ 2 + p ^ 2 \notag \\
 VAR(X) =& p -  p ^ 2 = p(1 - p)  \notag \\
 \end{align}
 $$
+
 ### Distribución Binomial
+
 
 ## Distribuciones Continuas
 
