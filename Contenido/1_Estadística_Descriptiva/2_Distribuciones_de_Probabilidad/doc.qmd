@@ -91,30 +91,55 @@ Var(X) = & E(X - \mu) ^ 2 \notag \\
 $$
 
 ## Cuantiles
-Son medidas que separan la distribución en diferentes partes iguales. Por ejemplo la mediana (llamada el percentil 50), separa la distribución en dos partes iguales. Utilizando la distribución de probabilidad acumulada, la mediana se obtiene al resolver la ecuación $F(x) = 0.5$. 
-En general se define el $p ^ {to}$ quintil  se obtiene a solucionar la siguiente ecuación:
+
+Son medidas que separan la distribución en diferentes partes iguales. Por ejemplo la mediana (llamada el percentil 50), separa la distribución en dos partes iguales. Utilizando la distribución de probabilidad acumulada, la mediana se obtiene al resolver la ecuación $F(x) = 0.5$. En general se define el $p ^ {to}$ quintil, y se obtiene a solucionar la siguiente ecuación:
 
 $$
 F(x) = p, \quad \text{Para cada } 0 < p < 1.
-$$
-**Ejemplo:** Para la distribución uniforme definida por el *pdf*:
+$$ **Ejemplo:** Para la distribución uniforme definida por el *pdf*:
 
 $$
 f(x) = \frac{1}{b - a}, \text{ si }  a < \le x \le b
-$$
-Donde, según el teorema fundamental del cálculo:
+$$ Donde, según el teorema fundamental del cálculo:
 
 $$
 f(x) =  \frac{dF(x)}{dx}
-$$
-Se obtiene: 
+$$ Se obtiene:
 
 $$
 \begin{align}
 F(x) = & \int ^ {x} _ {a} \frac{1}{b - a} dx  \notag \\
-F(x) = & 1 \frac{1}{b-a}\int ^ {x} _ {a} \frac{1}{b - a} dx \notag \\
+F(x) = &  \frac{1}{b-a}\int ^ {x} _ {a} dx \notag \\
+F(x) = &  \frac{x}{b-a} \notag \\
+F(x) = &  \Big| ^ x _ a \frac{x}{b - a} = \frac{x}{b - a} - \frac{a}{b - a} \notag \\
+F(x) = & \frac{x - a}{b - a} 
+\end{align}
+$$ 
+Por tanto, solución se obtiene resolviendo la siguiente ecuación: 
+
+$$
+\begin{align}
+F(x) = & p  \notag \\
+\frac{x - a}{b-a} = & p \notag \\
+\text{Despejando } x \text{ se obtiene} \notag \\
+x - a = & p (b-a) \notag \\
+x  = & a + p (b-a) \notag \\
 \end{align}
 $$
+
+Si el valor buscado es la mediana, $p = \frac{1}{2}$:
+
+$$
+\begin{align}
+x = & a + \frac{1}{2} (b - a) \notag \\
+x = & a + \frac{b}{2} - \frac{a}{2} \notag \notag \\
+x = & a - \frac{a}{2} + \frac{b}{2} \notag \\
+x = & \frac{2a - a}{2} + \frac{b}{2} \notag \\
+x = & \frac{a}{2}  + \frac{b}{2} \notag \\
+x = & \frac{a + b}{2}  \\
+\end{align}
+$$
+
 ## Distribuciones Discretas
 
 Para variables discretas se define la función $f(x)$ para denotar $P(X = x)$, en donde $f(x)$ es la función de probabilidad o la **función de masa de probabilidad** (pmf por sus siglas en inglés) de la variable aleatoria $X$.
@@ -133,14 +158,46 @@ $$
 
 ### Distribución de Bernoulli
 
-### Distribución Binomial
+Si una variable aleatoria discreta  puede obtener únicamente dos valores, sigue una distribución de Bernoulli, con una **pmf** definida de la siguiente forma:
 
-### Distribución Geométrica
+$$
+  f(X) = 
+    \begin{cases}
+      1 - p, \quad  \text{si $X = 0$ } \\
+      p, \quad  \text{si $X = 1$ es aleatoria}
+    \end{cases}    
+$$
+
+En donde: 
+
+$$
+\begin{align}
+E(X) =& 0 * (1 - p) + 1 * p \notag \\
+E(X) = & p \notag \\
+\end{align}
+$$
+$$
+\begin{align}
+E(X ^ 2) =& 0 ^ 2 * (1 - p) + 1 ^ 2 * p \notag \\
+E(X ^ 2) =& p \notag \\
+\end{align}
+$$
+$$
+\begin{align}
+VAR(X) =& E(X - E(X)) ^ 2 \notag \\
+VAR(X) =& E(X - p) ^ 2 \notag \\
+VAR(X) =& E(X ^ 2 - 2 X p + p ^ 2) \notag \\
+VAR(X) =& E(X ^ 2) - 2 E(X) p + p ^ 2 \notag \\
+VAR(X) =& p - 2 p p + p ^ 2 \notag \\
+VAR(X) =& p - 2 p ^ 2 + p ^ 2 \notag \\
+VAR(X) =& p -  p ^ 2 = p(1 - p)  \notag \\
+\end{align}
+$$
+### Distribución Binomial
 
 ## Distribuciones Continuas
 
 Para una variable continua, $P(X = x)$...
 
-#### Esperanza Matemática de una variable Continua
 
 # Referencias

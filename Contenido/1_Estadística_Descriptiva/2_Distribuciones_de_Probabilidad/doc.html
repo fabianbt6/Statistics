@@ -147,13 +147,13 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#esperanza-matemática" id="toc-esperanza-matemática" class="nav-link" data-scroll-target="#esperanza-matemática"><span class="header-section-number">1.1</span> Esperanza Matemática</a></li>
   <li><a href="#varianza" id="toc-varianza" class="nav-link" data-scroll-target="#varianza"><span class="header-section-number">1.2</span> Varianza</a></li>
-  <li><a href="#distribuciones-discretas" id="toc-distribuciones-discretas" class="nav-link" data-scroll-target="#distribuciones-discretas"><span class="header-section-number">1.3</span> Distribuciones Discretas</a>
+  <li><a href="#cuantiles" id="toc-cuantiles" class="nav-link" data-scroll-target="#cuantiles"><span class="header-section-number">1.3</span> Cuantiles</a></li>
+  <li><a href="#distribuciones-discretas" id="toc-distribuciones-discretas" class="nav-link" data-scroll-target="#distribuciones-discretas"><span class="header-section-number">1.4</span> Distribuciones Discretas</a>
   <ul class="collapse">
-  <li><a href="#distribución-de-bernoulli" id="toc-distribución-de-bernoulli" class="nav-link" data-scroll-target="#distribución-de-bernoulli"><span class="header-section-number">1.3.1</span> Distribución de Bernoulli</a></li>
-  <li><a href="#distribución-binomial" id="toc-distribución-binomial" class="nav-link" data-scroll-target="#distribución-binomial"><span class="header-section-number">1.3.2</span> Distribución Binomial</a></li>
-  <li><a href="#distribución-geométrica" id="toc-distribución-geométrica" class="nav-link" data-scroll-target="#distribución-geométrica"><span class="header-section-number">1.3.3</span> Distribución Geométrica</a></li>
+  <li><a href="#distribución-de-bernoulli" id="toc-distribución-de-bernoulli" class="nav-link" data-scroll-target="#distribución-de-bernoulli"><span class="header-section-number">1.4.1</span> Distribución de Bernoulli</a></li>
+  <li><a href="#distribución-binomial" id="toc-distribución-binomial" class="nav-link" data-scroll-target="#distribución-binomial"><span class="header-section-number">1.4.2</span> Distribución Binomial</a></li>
   </ul></li>
-  <li><a href="#distribuciones-continuas" id="toc-distribuciones-continuas" class="nav-link" data-scroll-target="#distribuciones-continuas"><span class="header-section-number">1.4</span> Distribuciones Continuas</a></li>
+  <li><a href="#distribuciones-continuas" id="toc-distribuciones-continuas" class="nav-link" data-scroll-target="#distribuciones-continuas"><span class="header-section-number">1.5</span> Distribuciones Continuas</a></li>
   </ul></li>
   <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">2</span> Referencias</a></li>
   </ul>
@@ -223,7 +223,7 @@ window.Quarto = {
 E(X) = &amp; \int ^ {\infty} _ {-\infty} x f(x) dx \notag \\
 &amp; \int ^ {b} _ {a} x * \frac{1}{b-a} dx \notag \\
 &amp; \frac{1}{b-a} \int ^ {b} _ {a} x  dx \notag \quad \notag \\
-&amp; F(x) = x = \frac{x ^ 2}{2} \notag \quad \notag \\
+&amp; F(x) = \frac{x ^ 2}{2} \notag \quad \notag \\
 &amp; \Big| ^ b _ a = \frac{1}{b-a} * \frac{b ^ 2}{2} - \frac{1}{b - a} * \frac{a ^ 2}{2} \notag \\
 &amp; \Big| ^ b _ a = \frac{b ^ 2}{2(b - a)} - \frac{a ^ 2}{2(b - a)} \notag \\
 &amp; \Big| ^ b _ a = \frac{b ^ 2 - a ^ 2}{2(b - a)} \notag \\
@@ -254,8 +254,50 @@ Var(X) = &amp; E(X - \mu) ^ 2 \notag \\
 \end{align}
 </span></p>
 </section>
-<section id="distribuciones-discretas" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="distribuciones-discretas"><span class="header-section-number">1.3</span> Distribuciones Discretas</h2>
+<section id="cuantiles" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="cuantiles"><span class="header-section-number">1.3</span> Cuantiles</h2>
+<p>Son medidas que separan la distribución en diferentes partes iguales. Por ejemplo la mediana (llamada el percentil 50), separa la distribución en dos partes iguales. Utilizando la distribución de probabilidad acumulada, la mediana se obtiene al resolver la ecuación <span class="math inline">F(x) = 0.5</span>. En general se define el <span class="math inline">p ^ {to}</span> quintil, y se obtiene a solucionar la siguiente ecuación:</p>
+<p><span class="math display">
+F(x) = p, \quad \text{Para cada } 0 &lt; p &lt; 1.
+</span> <strong>Ejemplo:</strong> Para la distribución uniforme definida por el <em>pdf</em>:</p>
+<p><span class="math display">
+f(x) = \frac{1}{b - a}, \text{ si }  a &lt; \le x \le b
+</span> Donde, según el teorema fundamental del cálculo:</p>
+<p><span class="math display">
+f(x) =  \frac{dF(x)}{dx}
+</span> Se obtiene:</p>
+<p><span class="math display">
+\begin{align}
+F(x) = &amp; \int ^ {x} _ {a} \frac{1}{b - a} dx  \notag \\
+F(x) = &amp;  \frac{1}{b-a}\int ^ {x} _ {a} dx \notag \\
+F(x) = &amp;  \frac{x}{b-a} \notag \\
+F(x) = &amp;  \Big| ^ x _ a \frac{x}{b - a} = \frac{x}{b - a} - \frac{a}{b - a} \notag \\
+F(x) = &amp; \frac{x - a}{b - a}
+\end{align}
+</span> Por tanto, solución se obtiene resolviendo la siguiente ecuación:</p>
+<p><span class="math display">
+\begin{align}
+F(x) = &amp; p  \notag \\
+\frac{x - a}{b-a} = &amp; p \notag \\
+\text{Despejando } x \text{ se obtiene} \notag \\
+x - a = &amp; p (b-a) \notag \\
+x  = &amp; a + p (b-a) \notag \\
+\end{align}
+</span></p>
+<p>Si el valor buscado es la mediana, <span class="math inline">p = \frac{1}{2}</span>:</p>
+<p><span class="math display">
+\begin{align}
+x = &amp; a + \frac{1}{2} (b - a) \notag \\
+x = &amp; a + \frac{b}{2} - \frac{a}{2} \notag \notag \\
+x = &amp; a - \frac{a}{2} + \frac{b}{2} \notag \\
+x = &amp; \frac{2a - a}{2} + \frac{b}{2} \notag \\
+x = &amp; \frac{a}{2}  + \frac{b}{2} \notag \\
+x = &amp; \frac{a + b}{2}  \\
+\end{align}
+</span></p>
+</section>
+<section id="distribuciones-discretas" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="distribuciones-discretas"><span class="header-section-number">1.4</span> Distribuciones Discretas</h2>
 <p>Para variables discretas se define la función <span class="math inline">f(x)</span> para denotar <span class="math inline">P(X = x)</span>, en donde <span class="math inline">f(x)</span> es la función de probabilidad o la <strong>función de masa de probabilidad</strong> (pmf por sus siglas en inglés) de la variable aleatoria <span class="math inline">X</span>.</p>
 <p>La pmf <span class="math inline">f(x)</span> de una variable discreta <span class="math inline">X</span> cumple las siguientes condiciones:</p>
 <p><span class="math display">
@@ -266,22 +308,24 @@ Var(X) = &amp; E(X - \mu) ^ 2 \notag \\
 \end{align}
 </span></p>
 <p><strong>Funciones de probabilidad acumulada</strong> (cdf por sus siglas en inglés) corresponde a <span class="math inline">F(x) = P(X \leq x)</span>, donde <span class="math inline">-\infty &lt; x &lt; \infty</span>.</p>
-<section id="distribución-de-bernoulli" class="level3" data-number="1.3.1">
-<h3 data-number="1.3.1" class="anchored" data-anchor-id="distribución-de-bernoulli"><span class="header-section-number">1.3.1</span> Distribución de Bernoulli</h3>
+<section id="distribución-de-bernoulli" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="distribución-de-bernoulli"><span class="header-section-number">1.4.1</span> Distribución de Bernoulli</h3>
+<p>Si una variable aleatoria discreta puede obtener únicamente dos valores, sigue una distribución de Bernoulli, con una <strong>pmf</strong> definida de la siguiente forma:</p>
+<p><span class="math display">
+  f(X) =
+    \begin{cases}
+      1 - p, \quad  \text{si $X = 0$ } \\
+      p, \quad  \text{si $X = 1$ es aleatoria}
+    \end{cases}    
+</span></p>
 </section>
-<section id="distribución-binomial" class="level3" data-number="1.3.2">
-<h3 data-number="1.3.2" class="anchored" data-anchor-id="distribución-binomial"><span class="header-section-number">1.3.2</span> Distribución Binomial</h3>
-</section>
-<section id="distribución-geométrica" class="level3" data-number="1.3.3">
-<h3 data-number="1.3.3" class="anchored" data-anchor-id="distribución-geométrica"><span class="header-section-number">1.3.3</span> Distribución Geométrica</h3>
+<section id="distribución-binomial" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="distribución-binomial"><span class="header-section-number">1.4.2</span> Distribución Binomial</h3>
 </section>
 </section>
-<section id="distribuciones-continuas" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="distribuciones-continuas"><span class="header-section-number">1.4</span> Distribuciones Continuas</h2>
+<section id="distribuciones-continuas" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="distribuciones-continuas"><span class="header-section-number">1.5</span> Distribuciones Continuas</h2>
 <p>Para una variable continua, <span class="math inline">P(X = x)</span>…</p>
-<section id="esperanza-matemática-de-una-variable-continua" class="level4" data-number="1.4.0.1">
-<h4 data-number="1.4.0.1" class="anchored" data-anchor-id="esperanza-matemática-de-una-variable-continua"><span class="header-section-number">1.4.0.1</span> Esperanza Matemática de una variable Continua</h4>
-</section>
 </section>
 </section>
 <section id="referencias" class="level1 unnumbered" data-number="2">
